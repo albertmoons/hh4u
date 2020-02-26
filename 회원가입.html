@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>회원가입</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form  name="myForm" method="post" action="html02_ok.php"
+        <h3>일반회원</h2>
+        <table border="1" style="background-color: darkgrey" width="100%">
+            <tr>
+                <td width="34%">&nbsp;1.가입인증 및 약관동의</td>
+                <td width="33%">&nbsp;2.회원정보 입력</td>
+                <td width="33%">&nbsp;3.회원가입완료</td>
+            </tr>
+        </table>
+        <p>-(주)HH4U에서는 회원님의 개인정보보호 문제를 신중하게 취급합니다.</p>
+        <p>-가입하신 정보는 회원님의 동의없이 공개되지 않으며, <span style="color: firebrick;"><b><u>개인정보보호정책</u></b></span>에  의해 보호를 받습니다.</p>
+        <p>*표시는 필수적으로 입력해주셔야 가입이 됩니다.</p>
+        <p>&nbsp;</p>
+        <h4>회원정보 필수입력사항</h4>
+        <table border="1" width="100%">
+            <tr>
+                <td align="center" width="20%" style="background-color: darkgrey;"><span style="color: blue; font-size: 13px;">*</span><span style="font-size: 15px;"><b>이름</b></td>
+                <td width="80%"><input type="text" size="30"></td>
+            </tr>
+            <tr>
+                <td align="center" style="background-color: darkgrey;"><span style="color: blue; font-size: 13px;">*</span><span style="font-size: 15px;"><b>ID</b></span> </td>
+                <td><input type="text" size="30" minlength="6" maxlength="16" placeholder="아이디를 입력해 주세요!"> <input type="button" value="중복확인"><span style="font-size: 10px; text-align: right;">영문, 숫자만 가능합니다(6자~16자)</span></td>
+            </tr>
+            <tr>
+                <td align="center" style="background-color: darkgrey;"><span style="color: blue; font-size: 13px;">*</span><span style="font-size: 15px;"><b>비밀번호</b></span></td>
+                <td><input type="password" size="30" minlength="9" maxlength="15" placeholder="패스워드를 입력해 주세요!"><span style="font-size:10px; text-align: right;">*영문, 숫자, 특수문자 포함(9~15자)</span><br><span style="font-size: 10px; text-align: right;">(사용가능한 특수문자 : ~ ! @ # $ % ^ & * () _  +  { } |  : < >  ?)</span></td>
+            </tr>
+            <tr>
+                <td align="center" style="background-color: darkgrey;"><span style="color: blue; font-size: 13px;">*</span><span style="font-size: 15px;"><b>비밀번호 확인</b></span></td>
+                <td><input type="password" size="30" minlength="9" maxlength="15" placeholder="패스워드를 확인해 주세요!"></td>
+            </tr>
+            <tr>
+                <td align="center" style="background-color: darkgrey;"><span style="color: blue; font-size: 13px;">*</span><span style="font-size: 15px;"><b>생년월일</b></span></td>
+                <td><input type="text" size="30" minlength="9" maxlength="15" placeholder="ex)111111"></td>
+            </tr>
+            
+            <tr>
+                <td rowspan="3" align="center" style="background-color: darkgrey;"><span style="color: blue; font-size: 13px;">*</span><span style="font-size: 15px;"><b>주소</b></span></td>
+                <td><input type="text" size="30" maxlength="5"> <input type="button" value="우편번호 찾기"></td>
+            </tr>
+            <tr border="hide">
+                <td><input type="text" size="60"></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="60" placeholder="상세 주소 입력!"></td>
+            </tr>
+            <tr>
+                <td align="center" style="background-color: darkgrey;"><span style="color: blue; font-size: 13px;">*</span><span style="font-size: 15px;"><b>휴대전화번호</b></span></td>
+                <td><select>
+                    <option value="선택">선택</option>
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="016">016</option>
+                    <option value="019">019</option>
+                </select>-
+                <input type="text" size="5">-
+                <input type="text" size="5">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="background-color: darkgrey;"><span style="color: blue; font-size: 13px;">*</span><span style="font-size: 15px;"><b>SNS 수신여부</b></span></td>
+                <td style="font-size: 13px;"><label><input type="radio" name="send" value="예"> 예  </label>
+                    <label><input type="radio" name="send" value="아니요">아니요</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="background-color: darkgrey;"><span style="color: blue; font-size: 13px;">*</span><span style="font-size: 15px;"><b>메일주소</b></span></td>
+                <td style="font-size: 13px;"><input type="email" size="15">@ <input type="text" size="15">
+                    <select>
+                        <option value="직적입력">직접입력</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="daum.net">daum.net</option>
+                        <option value="nate.com">nate.com</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="background-color: darkgrey;"><span style="color: blue; font-size: 13px;">*</span><span style="font-size: 15px;"><b>정보수신메일</b></span></td>
+                <td style="font-size: 13px;"><span style="font-size: 11px;">(주)HH4U에서 제공하는 정보수신메일을 받으시겠습니까?</span><label><input type="radio" name="send" value="예"> 예  </label>
+                    <label><input type="radio" name="send" value="아니요">아니요</label>
+                </td>
+            </tr>
+        </table>
+        <table border="1" width="100%">
+            <h4>맞춤형 서비스 선택입력사항</h4>
+            <tr>
+                <td align="center" width="20%" style="background-color: darkgrey;"><span style="font-size: 15px;"><b>성별</b></td>
+                <td width="80%" style="font-size: 13px;"><label><input type="radio" name="gender" value="남"> 남 </label>
+                  <label><input type="radio" name="gender" value="여"> 여</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" width="20%" style="background-color: darkgrey;"><span style="font-size: 15px;"><b>연령대</b></td>
+                <td style="font-size: 13px;"> 
+                    <fieldset>
+                        <label>영유아<input type="checkbox" name="old" value="영유아"></label> 
+                        <label>어린이<input type="checkbox" name="old" value="어린이"></label>
+                        <label>청소년<input type="checkbox" name="old" value="청소년"></label>
+                        <label>성인<input type="checkbox" name="old" value="성인"></label>
+                        <label>노인<input type="checkbox" name="old" value="노인"></label>
+                        <label>선택안함<input type="checkbox" name="old" value="선택안함"></label>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" width="20%" style="background-color: darkgrey;"><span style="font-size: 15px;"><b>분야</b></td>
+                <td style="font-size: 13px;"> 
+                <select>
+                    <option value="선택">선택</option>
+                    <option value="회사원">회사원</option>
+                    <option value="개인사업">개인사업</option>
+                    <option value="공무원">공무원</option>
+                    <option value="운수업">운수업</option>
+                    <option value="군인">군인</option>
+                    <option value="유통업">유통업</option>
+                 </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" width="20%" style="background-color: darkgrey;"><span style="font-size: 15px;"><b>자기소개</b></td>
+                <td><textarea cols="40" rows="5" placeholder="글을 작성해 주세요."></textarea>
+                </td>
+            </tr>
+        </table>
+        <p><input type="submit" value="가입" onclick="sendit()"> <input type="button" value="취소" onclick="sendit2()"> <input type="reset" value="초기화"></p>
+       
+        <script>
+            function sendit(){
+                alert("가입이 완료 되었습니다")
+                myForm.submit();
+            }
+            function sendit2(){
+                alert("가입이 취소 되었습니다")
+                myForm.submit();
+            }
+        </script>
+</html>
